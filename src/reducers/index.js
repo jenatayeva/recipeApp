@@ -3,6 +3,6 @@ import { popularSlice } from "./dataSlice";
 
 export const store = configureStore({
   reducer: {
-    recipies: popularSlice.reducer
+    recipies: popularSlice.reducer,
   }
 })

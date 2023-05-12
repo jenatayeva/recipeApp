@@ -1,10 +1,7 @@
 import React from 'react'
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StyleSheet, Text, TextBase, View } from 'react-native'
 
-const Cart = ({ source, text }) => {
-  const handlePress = () => {
-    console.log('Pressed')
-  }
+const Cart = ({ source, text, handlePress }) => {
   return (
     <View style={styles.cartBox}>
     <Pressable onPress={handlePress} style={styles.image}>
@@ -18,7 +15,7 @@ const Cart = ({ source, text }) => {
 const styles = StyleSheet.create({
   cartBox: {
     flexDirection: 'column',
-    marginVertical: 30
+    // marginVertical: 30
   },
   image: {
     width: 70,
@@ -26,7 +23,8 @@ const styles = StyleSheet.create({
   },
   text:{
     marginTop: 5,
-    color: '#023047'
+    color: '#023047',
+    textAlign: 'center'
   }
 })
 
